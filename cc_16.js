@@ -33,3 +33,30 @@ const fetchProducts = async function () {
       handleError(error); // calls the handle error function with the error as the parameters
     }
   };
+// Task 4
+function displayProducts(products) {
+    const container = document.querySelector("#product-container");
+  
+    products.slice(0, 5).forEach((product) => {
+      // for  each of the  first 5 products
+      const prodDiv = document.createElement("div"); // create a div element
+      prodDiv.classList.add("product"); // cerates a class for products (used in style.css)
+  
+      const prodName = document.createElement("h3"); // creates a header element
+      prodName.textContent = product.fields.name; // assigns text content
+  
+      const prodPrice = document.createElement("p"); // creates a paragraph element
+      prodPrice.textContent = `Price: $${product.fields.price}`; // assigns text content
+  
+      const prodImage = document.createElement("img"); // creates image element
+      prodImage.src = product.fields.image[0].url; // calls ther corelating image url
+      prodImage.alt = product.fields.names; // assigns slternative text for the image
+  
+      prodDiv.appendChild(prodName); // appends to prodDiv
+      prodDiv.appendChild(prodPrice); // appends to prodDiv
+      prodDiv.appendChild(prodImage); // appends to prodDiv
+  
+      container.appendChild(prodDiv); // appends prodDiv to container
+    });
+  }
+  
