@@ -64,3 +64,5 @@ function handleError(error) {
     // creaytes a fucntion with one parameter
     console.error("Error fetching orders:", error); // calls the error as a console error with a pre written message
   }  
+fetchProductsThen();
+fetchProductsAsync();

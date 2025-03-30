@@ -1,0 +1,19 @@
+.product {
+    border: 1px solid #080808;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #cbcae9;
+    border-radius: 10px;
+    color: #064990
+    
+  }
+ .product img {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+    border: 2px solid #080808; 
+    border-radius: 10px; 
+}
+
