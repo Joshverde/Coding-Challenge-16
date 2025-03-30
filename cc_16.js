@@ -15,7 +15,7 @@ function fetchProductThen() {
       });
   }
 //Task 3
-const fetchProducts = async function () {
+const fetchProductsAsync = async function () {
     // creates an async fucntion
     try {
       // trys block of code
@@ -64,5 +64,5 @@ function handleError(error) {
     // creaytes a fucntion with one parameter
     console.error("Error fetching orders:", error); // calls the error as a console error with a pre written message
   }  
-fetchProductsThen();
+fetchProductThen();
 fetchProductsAsync();
